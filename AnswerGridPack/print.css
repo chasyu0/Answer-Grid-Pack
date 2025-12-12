@@ -1,0 +1,39 @@
+/* print.css */
+
+/* A4 용지 여백 줄이기 */
+@page {
+    size: A4;
+    margin: 10mm;
+}
+
+/* 배경 흰색 강제 */
+body {
+    background: #fff !important;
+}
+
+/* 화면용 그림자, 카드 스타일 제거 */
+.card, .options-card, .container, .divider {
+    box-shadow: none !important;
+    background: white !important;
+}
+
+/* 출력할 때 옵션 UI 숨기기 */
+.options-card,
+#generateBtn,
+#downloadBtn,
+#printBtn,
+h1,
+.divider {
+    display: none !important;
+}
+
+/* 정오표 출력만 보이게 */
+#output {
+    padding-top: 10px;
+}
+
+/* 외곽 테두리 얇게 유지 */
+.outer-box {
+    border-color: #000 !important;
+    border-width: 0.25px !important;
+}

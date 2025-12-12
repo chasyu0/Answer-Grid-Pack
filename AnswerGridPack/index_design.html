@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnswerGrid</title>
+    <link rel="stylesheet" href="/AnswerGridPack/stylever.css">
+    <link rel="stylesheet" href="/AnswerGridPack/print.css" media="print">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/AnswerGridPack/wirte.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Answer Grid Generator</h1>
+
+        <div class="card options-card">
+            <h2>Options</h2>
+
+            <label>
+                문항 수 선택
+                <select id="questionCount">
+                    <option value="10">10문항</option>
+                    <option value="20">20문항</option>
+                    <option value="30">30문항</option>
+                    <option value="40">40문항</option>
+                    <option value="50">50문항</option>
+                    <option value="60">60문항</option>
+                    <option value="70">70문항</option>
+                    <option value="80">80문항</option>
+                    <option value="90">90문항</option>
+                    <option value="100">100문항</option>
+                </select>
+            </label>
+
+            <!-- 체크항목 2개 나란히 -->
+    <div class="row check-group">
+        <label class="check-row">
+            <input type="checkbox" id="showNumbers" checked>
+            번호 표시
+        </label>
+
+        <label class="check-row">
+            <input type="checkbox" id="showOuterBorder">
+            테두리 표시
+        </label>
+    </div>
+
+    <!-- 버튼 2개 나란히 -->
+    <div class="row btn-group">
+        <button id="generateBtn">정오표 생성</button>
+        <button id="downloadBtn">PDF 다운로드</button>
+    </div>
+</div>
+
+        <hr class="divider">
+
+        <div id="output"></div>
+    </div>
+
+    <script src="/AnswerGridPack/generate_design.js"></script>
+</body>

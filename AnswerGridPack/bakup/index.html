@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Answer Grid Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>정오표 생성기</h2>
+
+<div class="options">
+
+    <label>
+        <input type="checkbox" id="borderOption">
+        외곽 테두리 생성
+    </label>
+
+    <label>
+        <input type="checkbox" id="numberOption" checked>
+        번호(동그라미) 생성
+    </label>
+
+    <label>
+        문항 수:
+        <select id="countOption">
+            <option value="10">10문항</option>
+            <option value="20">20문항</option>
+            <option value="30">30문항</option>
+            <option value="40">40문항</option>
+            <option value="50">50문항</option>
+            <option value="60">60문항</option>
+            <option value="70">70문항</option>
+            <option value="80">80문항</option>
+            <option value="90">90문항</option>
+            <option value="100">100문항</option>
+        </select>
+    </label>
+
+    <button id="generateBtn">생성하기</button>
+</div>
+
+<hr>
+
+<div id="result" class="outer-box">
+    <div id="grid" class="grid"></div>
+</div>
+
+<script src="generate.js"></script>
+</body>
+</html>
